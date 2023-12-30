@@ -1,6 +1,6 @@
-# **YZV 475E (14985)** - _Term Project_
+# [**YZV 475E (14985)** - _Term Project_](https://github.com/AtaTrkgl/yzv-475e-term-project)
  
-**Name:** Ata Türkoğlu
+**Name:** [Ata Türkoğlu](https://github.com/AtaTrkgl)
 
 **Student ID:** 150210337
 
