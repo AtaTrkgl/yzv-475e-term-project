@@ -33,6 +33,7 @@ class ItuHelper:
 
     def print_counts(self):
         print("Total number of lessons:", len(self.lessons))  
+        print("Total number of students enrolled:", sum([l.enrolled for l in self.lessons]))  
         print("Total number of courses:", len(self.courses))
         print("Total number of buildings:", len(self._building_map))
 
@@ -59,14 +60,14 @@ class ItuHelper:
 
 # region DATA FETCHERS
     def _cache_file(self, lines: list[str], name: str) -> None:
-        with open(f"./data/{name}.txt", "w", encoding="utf-16") as f:
+        with open(f"../data/{name}.txt", "w", encoding="utf-16") as f:
             f.writelines([r + "\n" for r in lines])
     
     def _read_cache(self, name: str) -> list[str] | None:
-        if not path.exists(f"./data/{name}.txt"):
+        if not path.exists(f"../data/{name}.txt"):
             return None
 
-        with open(f"./data/{name}.txt", "r", encoding="utf-16") as f:
+        with open(f"../data/{name}.txt", "r", encoding="utf-16") as f:
             return f.readlines()
     
     def _fetch_data(self, url: str, name: str) -> list[str]:
