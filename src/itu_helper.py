@@ -40,13 +40,13 @@ class ItuHelper:
     def get_building_from_lesson(self, lesson: Lesson) -> tuple[list[str], list[str]]:
         buildings, campuses = [], []
         for c in lesson.buildings:
-            b, ca = self._get_building_info(c)
+            b, ca = self.get_building_info(c)
             buildings.append(b)
             campuses.append(ca)
 
         return buildings, campuses
 
-    def _get_building_info(self, building_code: str) -> tuple[str, str]:
+    def get_building_info(self, building_code: str) -> tuple[str, str]:
         # if the building is not specified
         if "--" in building_code:
             return None, None
