@@ -12,6 +12,12 @@ class Course:
     def __repr__(self) -> str:
         return self.__str__()
 
+    def get_total_capacity(self) -> float | None:
+        return sum([l.capacity for l in self.lessons]) if len(self.lessons) > 0 else None
+    
+    def get_total_enrolled(self) -> float | None:
+        return sum([l.enrolled for l in self.lessons]) if len(self.lessons) > 0 else 0
+
     def assign_lessons(self, lessons: list[Lesson]) -> None:
         self.lessons = [l for l in lessons if l.code == self.code]
 
