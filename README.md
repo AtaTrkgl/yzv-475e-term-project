@@ -63,7 +63,7 @@ Here, we can see the bottom-right part of _Plot 1_ more clearly, the analysis fo
 
 ![Plot 3](img/readme/plot3.png)
 
-This plot is the zoomed in version of the left plot in _Plot 2_. The courses above the red line need a capacity increase, below are the top-20 of them:
+This plot is the zoomed-in version of the left plot in _Plot 2_. The courses above the red line need a capacity increase, below are the top-20 of them:
 
 1. MTO 451E : ($224.00\%$ full)		(Oceanography)
 1. MTO 350E : ($190.00\%$ full)		(Air Pollution Fundamentals)
